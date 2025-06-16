@@ -17,7 +17,8 @@ const messages = [
 ];
 
 const images = [
-  "plant1.png", "plant2.png", "plant3.png"
+  "plant1.png", "plant2.png", "plant3.png", "plant4.png", "plant5.png", 
+  "plant6.png", "plant7.png", "plant8.png", "plant9.png", "plant10.png",
 ];
 
 function getRandomMessage() {
