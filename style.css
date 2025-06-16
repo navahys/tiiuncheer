@@ -1,32 +1,67 @@
 body {
-  background-color: #f0fff0;
-  font-family: 'Arial', sans-serif;
+  background-color: #e8f5e9; /* Lighter, fresh green background */
+  font-family: 'Noto Sans KR', sans-serif; /* Modern Korean font */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height for better content adaptability */
   margin: 0;
+  color: #333; /* Darker text for better readability */
+  line-height: 1.6;
+  padding: 20px; /* Add some padding around the edges */
+  box-sizing: border-box; /* Include padding in element's total width and height */
 }
+
 .container {
   text-align: center;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 40px 30px; /* More padding for a spacious feel */
+  border-radius: 25px; /* Slightly more rounded corners */
   background: #ffffff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Softer, more pronounced shadow */
+  max-width: 500px; /* Limit container width for better readability on large screens */
+  width: 100%; /* Make it responsive */
+  box-sizing: border-box;
 }
+
 img {
-  max-width: 200px;
-  margin-bottom: 20px;
+  max-width: 250px; /* Slightly larger image */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 30px; /* More space below image */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for image hover */
 }
+
+img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+h1 {
+  font-size: 1.8em; /* Slightly larger heading */
+  color: #2e7d32; /* A richer green for the heading */
+  margin-bottom: 25px; /* Space below heading */
+  min-height: 80px; /* Ensure consistent height for message area */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 12px 25px; /* More padding for a larger button */
+  font-size: 17px;
   border: none;
-  background-color: #6ab04c;
+  background-color: #4CAF50; /* A standard, friendly green */
   color: white;
-  border-radius: 10px;
+  border-radius: 30px; /* Pill-shaped button */
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  outline: none; /* Remove outline on focus */
 }
+
 button:hover {
-  background-color: #4aaf3b;
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Press down effect on click */
 }
